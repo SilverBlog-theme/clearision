@@ -16,13 +16,14 @@
                         <div class="post_t_d">{{ page_info.time }}</div>
                     </div>
                     <div class="post_h_l">
-                        <h2 class="post_h"><a href="/{{ page_info.name }}{% if static %}.html{% endif %}">{{ page_info.title }}</a></h2>
-
+                        <h2 class="post_h"><a href="/{{ page_info.name }}{% if static %}.html{% endif %}">{{
+                            page_info.title }}</a></h2>
                     </div>
                 </hgroup>
                 <div class="post_t">
                     {{ page_info.excerpt }}
-                    <p><a href="/{{ page_info.name }}{% if static %}.html{% endif %}" class="more-link">Read More →</a></p>
+                    <p><a href="/{{ page_info.name }}{% if static %}.html{% endif %}" class="more-link">Read More →</a>
+                    </p>
                 </div>
 
             </article>

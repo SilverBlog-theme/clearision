@@ -435,7 +435,6 @@ input:hover, textarea:hover, input:focus, textarea:focus {
     min-height: 40px !important;
 }
 
-
 /* 基本布局 */
 
 #page {
@@ -590,7 +589,6 @@ input:hover, textarea:hover, input:focus, textarea:focus {
     color: #777;
 }
 
-
 /* 内容容器 */
 
 #ctn, #link {
@@ -708,7 +706,6 @@ input:hover, textarea:hover, input:focus, textarea:focus {
     background: #777;
     color: #FFF;
 }
-
 
 .post_h_quote {
     display: none;
@@ -876,7 +873,6 @@ input:hover, textarea:hover, input:focus, textarea:focus {
     float: right;
     margin-left: 0;
 }
-
 
 /* 尾部样式 */
 
@@ -1049,7 +1045,6 @@ input:hover, textarea:hover, input:focus, textarea:focus {
         font-size: 14px !important;
         margin: 0;
     }
-
 
     #float {
         margin-top: 0;
