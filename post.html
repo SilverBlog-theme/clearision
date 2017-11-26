@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+{% include system_config.Theme+"/include/head.html" %}
+
+<body style='background-image: url("{{ template_config.Cover_Image }}");'>
+<div id="page">
+    {% include system_config.Theme+"/include/head_info.html" %}
+    <div id="ctn">
+        <div id="content">
+            <article class="post">
+
+                <hgroup class="post_hctn">
+                    <div class="post_time">
+                        <div class="post_t_d">{{ page_info.time }}</div>
+                    </div>
+                    <div class="post_h_l">
+                        <h2 class="post_h"><a href="/{{ page_info.name }}{% if static %}.html{% endif %}">{{
+                            page_info.title }}</a></h2>
+
+                        <div class="post_tag">
+
+                            <span class="post_c"><a class="wp-postviews">{{ system_config.Author_Name }}</a></span>
+
+                        </div>
+                    </div>
+                </hgroup>
+
+                <div class="post_t">
+
+                    {{ content|safe }}
+
+                </div>
+                {% include "include/comment_box.html" ignore missing %}
+            </article>
+
+        </div>
+    </div>
+
+    {% include system_config.Theme+"/include/foot.html" %}
+
+</div>
+</body>
+</html>
+
+<!-- == Footer Stop == -->

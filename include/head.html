@@ -1,0 +1,14 @@
+<head>
+
+    <meta charset="utf-8"/>
+    <title>{{ title }}</title>
+    {% set css_file = "style.css" %}
+    {% if template_config.Dark %}
+    {% set css_file = "style.opacity.css" %}
+    {% endif %}
+    <link rel="stylesheet" href="/static/{{ system_config.Theme }}/{{ css_file }}">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+</head>

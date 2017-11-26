@@ -1,0 +1,18 @@
+<hgroup id="ctn_header">
+    <div id="title">
+        <h1 id="site-title"><span><a href="{{ system_config.Project_URL }}"
+                                     title="{{ system_config.Project_Description }}"
+                                     rel="home">{{ system_config.Project_Name }}</a></span></h1>
+        <h2 id="site-description">{{ system_config.Project_Description }}</h2>
+    </div>
+    <div class="clearfix"></div>
+</hgroup>
+
+<div id="float">
+
+    <a href="{{ system_config.Project_URL }}" title="{{ system_config.Project_Name }}" rel="home"><img id="logo"
+                                                                                                       title="{{ system_config.Project_Name }}"
+                                                                                                       src="{{ system_config.Author_Image }}"></a>
+    {% include system_config.Theme+"/include/menu.html" %}
+
+</div>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+{% include system_config.Theme+"/include/head.html" %}
+
+<body style='background-image: url("{{ template_config.Cover_Image }}");'>
+<div id="page">
+    {% include system_config.Theme+"/include/head_info.html" %}
+
+    <div id="ctn">
+        <div id="content">
+            {% for page_info in page_list %}
+            <article class="post">
+                <hgroup class="post_hctn">
+                    <div class="post_time">
+                        <div class="post_t_d">{{ page_info.time }}</div>
+                    </div>
+                    <div class="post_h_l">
+                        <h2 class="post_h"><a href="/{{ page_info.name }}{% if static %}.html{% endif %}">{{ page_info.title }}</a></h2>
+
+                        <div class="post_tag">
+
+                            <span class="post_c"><a class="wp-postviews">{{ system_config.Author_Name }}</a></span>
+
+                        </div>
+                    </div>
+                </hgroup>
+                <div class="post_t">
+                    {{ page_info.excerpt }}
+                    <p><a href="/{{ page_info.name }}{% if static %}.html{% endif %}" class="more-link">Read More →</a></p>
+                </div>
+
+            </article>
+            {% endfor %}
+
+            <div id="page_nav">
+                {% if now_page !=1 %}
+                <a class="prev page-numbers" href="/index/p/{{ now_page - 1 }}{% if static %}.html{% endif %}">上一页</a>
+                {% endif %}
+                <span class="page-numbers current">第 {{ now_page }} 页 ⁄ 共 {{ page_row }} 页</span>
+                {% if now_page != page_row and page_row != 1 %}
+                <a class="next page-numbers" href="/index/p/{{ now_page + 1 }}{% if static %}.html{% endif %}">下一页</a>
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+
+    {% include system_config.Theme+"/include/foot.html" %}
+
+</div>
+</body>
+</html>
+
+<!-- == Footer Stop == -->
