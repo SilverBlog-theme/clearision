@@ -1,13 +1,13 @@
 ::-moz-selection { background: #DDD; background: rgba(255,255,255,0.2); }
 ::selection { background: #DDD; background: rgba(255,255,255,0.2); }
-body { background: url('img/background.jpg'); background-size: cover; background-attachment: fixed; background-color: rgb(98, 223, 247); color: #EFEFEF; }
+body { background-size: cover; background-attachment: fixed; background-color: rgb(221, 221, 221); color: #EFEFEF; }
 body::after { content: ""; display: block; position: fixed; top: 0; left: 0; margin: 0; padding: 0; height: 100%; width: 100%; background: rgba(0,0,0,0.55); z-index: 0; }
 #page { padding: 0 10px; position: relative; z-index: 10; }
 a, #sidebar a { color: #FEFEFE; }
 del { color: #CCC; }
 a:hover, a:hover p, #sidebar a:hover, a:visited:hover, a:visited:hover p, #sidebar a:visited:hover { color: #D4DA16; border-bottom: 1px dashed #DDD; }
 h2 a:hover, h2 a:visited:hover, a:hover p, a:visited:hover p { border: none; }
-a:visited, #sidebar a:visited { color: #DDD }
+a:visited, #sidebar a:visited { color: #222 }
 blockquote , q { border-color: rgba(255,255,255,0.7); }
 pre , code { background: rgba(0,0,0,0.2); color: #FEFEFE; border: 1.5px solid #AAA; }
 pre:hover , code:hover { background: rgba(18,19,20,0.9); color: #FEFEFE; }

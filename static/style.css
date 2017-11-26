@@ -194,7 +194,6 @@ input:hover , textarea:hover , input:focus , textarea:focus { background: #FFF; 
 .post_auth { display: none; }
 .post_t { margin: 15px 0 15px 0; }
 .post_time { display: inline-block; float: right; padding: 5px; margin-left: 15px;
-	text-align: center; font-family: "Times New Roman", serif, sans-serif;
 	border-width: 0 1px 1px 1px; border-style: dashed; border-color: #DDD; }
 .post_t_u { font-size: 18px; line-height: 18px; }
 .post_t_d { font-size: 24px; }
