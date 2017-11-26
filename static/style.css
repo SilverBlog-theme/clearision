@@ -289,7 +289,7 @@ td {
 }
 
 .opacity {
-    filter: alpha(opacity=50);
+    filter: alpha(opacity=70);
     -moz-opacity: 0.5;
     -khtml-opacity: 0.5;
     opacity: 0.5;

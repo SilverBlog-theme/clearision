@@ -24,7 +24,7 @@ body::after {
     padding: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 0;
 }
 
@@ -43,7 +43,7 @@ del {
 }
 
 a:hover, a:hover p, #sidebar a:hover, a:visited:hover, a:visited:hover p, #sidebar a:visited:hover {
-    color: #D4DA16;
+    color: #222222;
     border-bottom: 1px dashed #DDD;
 }
 
