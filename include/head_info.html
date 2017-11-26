@@ -1,17 +1,30 @@
 <hgroup id="ctn_header">
     <div id="title">
-        <h1 id="site-title"><span><a href="{{ system_config.Project_URL }}"
-                                     title="{{ system_config.Project_Description }}"
-                                     rel="home">{{ system_config.Project_Name }}</a></span></h1>
+        <h1 id="site-title"><span><a href="/" rel="home">{{ system_config.Project_Name }}</a></span></h1>
         <h2 id="site-description">{{ system_config.Project_Description }}</h2>
     </div>
     <div class="clearfix"></div>
 </hgroup>
 
 <div id="float">
-
-    <a href="{{ system_config.Project_URL }}" title="{{ system_config.Project_Name }}" rel="home">
-        <img id="logo" src="{{ system_config.Author_Image }}" width="100px" height="100px"></a>
-    {% include system_config.Theme+"/include/menu.html" %}
-
+    <a href="{{ system_config.Project_URL }}" rel="home">
+        <img id="logo" src="{{ system_config.Author_Image }}" width="100px" height="100px"/>
+    </a>
+    <nav id="nav" role="navigation">
+        <div class="menu-container">
+            <ul class="menu">
+                <li class="menu-item"><a href="/index{% if static %}.html{% endif %}">主页</a></li>
+                {% for item in menu_list %}
+                {% if "absolute" in item %}
+                {% set url = item.absolute %}
+                {% else %}
+                {% set url = "/"+item.name %}
+                {% endif %}
+                <li class="menu-item"><a href="{{url}}{% if static %}.html{% endif %}">{{ item.title }}</a>
+                </li>
+                {% endfor %}
+                <li class="menu-item"><a href="/rss{% if static %}.xml{% endif %}">订阅</a></li>
+            </ul>
+        </div>
+    </nav>
 </div>
