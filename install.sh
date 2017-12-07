@@ -4,7 +4,7 @@ if [ $(basename `pwd`) != "templates" ];then
     exit
 fi
 if [ ! -d "clearision" ]; then
-    git clone https://github.com/SilverBlogTeam/clearision.git --depth 1
+    git clone https://github.com/SilverBlogTheme/clearision.git --depth 1
     cd clearision
 fi
 ln -s $(pwd)/static ../static/clearision
