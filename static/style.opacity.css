@@ -43,7 +43,7 @@ del {
 }
 
 a:hover, a:hover p, #sidebar a:hover, a:visited:hover, a:visited:hover p, #sidebar a:visited:hover {
-    color: #222222;
+    color: #FEFEFE;
     border-bottom: 1px dashed #DDD;
 }
 
