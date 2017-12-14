@@ -3,7 +3,7 @@
 
 {% include system_config.Theme+"/include/head.html" %}
 
-<body {% if template_config.Cover_Image != "" %} style='background-size: cover;background: url("{{ template_config.Cover_Image }}") center;' {% endif %}>
+<body {% if template_config.Cover_Image != "" %} style='background-image: url("{{ template_config.Cover_Image }}"); background-size: cover;background-position: center;' {% endif %}>
 <div id="page">
     {% include system_config.Theme+"/include/head_info.html" %}
     <div id="ctn">
