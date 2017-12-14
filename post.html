@@ -9,17 +9,19 @@
     <div id="ctn">
         <div id="content">
             <article class="post">
-                {% if "time" in page_info %}
+
                 <hgroup class="post_hctn">
+                    {% if "time" in page_info %}
                     <div class="post_time">
                         <div class="post_t_d">{{ page_info.time }}</div>
                     </div>
+                    {% endif %}
                     <div class="post_h_l">
                         <h2 class="post_h"><a href="/{{ page_info.name }}{% if static %}.html{% endif %}">{{
                             page_info.title }}</a></h2>
                     </div>
                 </hgroup>
-                {% endif %}
+
                 <div class="post_t">
 
                     {{ content|safe }}
