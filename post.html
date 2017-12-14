@@ -4,7 +4,7 @@
 {% include system_config.Theme+"/include/head.html" %}
 
 <body {% if template_config.Cover_Image !="" %}
-      style='background-size: cover;background: url("{{ template_config.Cover_Image }}") center;' {% endif %}>
+      style='background-size: 100% 100%;background: url("{{ template_config.Cover_Image }}") center;' {% endif %}>
 <div id="page">
     {% include system_config.Theme+"/include/head_info.html" %}
     <div id="ctn">
