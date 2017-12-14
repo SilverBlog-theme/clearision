@@ -9,7 +9,7 @@
     <div id="ctn">
         <div id="content">
             <article class="post">
-
+                {% if "time" in page_info %}
                 <hgroup class="post_hctn">
                     <div class="post_time">
                         <div class="post_t_d">{{ page_info.time }}</div>
@@ -19,7 +19,7 @@
                             page_info.title }}</a></h2>
                     </div>
                 </hgroup>
-
+                {% endif %}
                 <div class="post_t">
 
                     {{ content|safe }}
