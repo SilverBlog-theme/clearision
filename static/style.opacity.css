@@ -9,7 +9,7 @@
 }
 
 body {
-    background-size: cover;
+    background-size: cover !important;
     background: rgb(221, 221, 221) fixed;
     color: #EFEFEF;
 }
