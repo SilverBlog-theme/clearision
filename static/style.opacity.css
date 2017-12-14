@@ -124,7 +124,7 @@ button:active, input[type="submit"]:active {
 }
 
 #nav li:hover, #next li:hover {
-    border-color: #D4DA16;
+    border-color: #DDD;
     border-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -142,7 +142,7 @@ button:active, input[type="submit"]:active {
 }
 
 #title a:hover {
-    color: #D4DA16;
+    color: #DDD;
 }
 
 #title h2 {
@@ -169,7 +169,7 @@ button:active, input[type="submit"]:active {
 }
 
 .post_hctn a:hover {
-    color: #D4DA16;
+    color: #DDD;
 }
 
 .post_ct a:hover {
@@ -276,7 +276,7 @@ button:active, input[type="submit"]:active {
 }
 
 #footer a:hover {
-    color: #D4DA16;
+    color: #DDD;
 }
 
 @media screen and (max-width: 600px) {
