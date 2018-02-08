@@ -5,9 +5,9 @@ if [ $(basename `pwd`) != "templates" ];then
 fi
 if [ ! -d "clearision" ]; then
     git clone https://github.com/SilverBlogTheme/clearision.git --depth 1
-    cd clearision
 fi
 ln -sv ../clearision/static ./static/clearision
+cd clearision
 if [ -f "config.example.json" ]; then
     cp config.example.json config.json
     vim config.json
