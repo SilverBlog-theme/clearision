@@ -7,7 +7,7 @@ if [ ! -d "clearision" ]; then
     git clone https://github.com/SilverBlogTheme/clearision.git --depth 1
     cd clearision
 fi
-ln -s $(pwd)/static ../static/clearision
+ln -sv ../clearision/static ./static/clearision
 if [ -f "config.example.json" ]; then
     cp config.example.json config.json
     vim config.json
