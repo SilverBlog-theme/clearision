@@ -5,7 +5,7 @@ if [ $(basename `pwd`) != "templates" ];then
     exit
 fi
 if [ ! -d ${templates_name} ]; then
-    git clone https://github.com/SilverBlogTeam/${templates_name}.git
+    git clone https://github.com/SilverBlogTheme/${templates_name}.git
 fi
 ln -sv ../${templates_name}/static ./static/${templates_name}
 cd ${templates_name}
