@@ -18,13 +18,13 @@
                         <div class="post_t_d">{{ page_info.time }}</div>
                     </div>
                     <div class="post_h_l">
-                        <h2 class="post_h"><a href="/{{ page_info.name }}{% if static %}.html{% endif %}">{{
+                        <h2 class="post_h"><a href="/{{ page_info.name }}">{{
                             page_info.title }}</a></h2>
                     </div>
                 </hgroup>
                 <div class="post_t">
                     {{ page_info.excerpt }}
-                    <p><a href="/{{ page_info.name }}{% if static %}.html{% endif %}" class="more-link">Read More →</a>
+                    <p><a href="/{{ page_info.name }}" class="more-link">Read More →</a>
                     </p>
                 </div>
 
@@ -33,11 +33,11 @@
 
             <div id="page_nav">
                 {% if now_page !=1 %}
-                <a class="prev page-numbers" href="/index/p/{{ now_page - 1 }}{% if static %}.html{% endif %}">上一页</a>
+                <a class="prev page-numbers" href="/index/{{ now_page - 1 }}">上一页</a>
                 {% endif %}
                 <span class="page-numbers current">第 {{ now_page }} 页 ⁄ 共 {{ page_row }} 页</span>
                 {% if now_page != page_row and page_row != 1 %}
-                <a class="next page-numbers" href="/index/p/{{ now_page + 1 }}{% if static %}.html{% endif %}">下一页</a>
+                <a class="next page-numbers" href="/index/{{ now_page + 1 }}">下一页</a>
                 {% endif %}
             </div>
 
