@@ -13,17 +13,17 @@
     <nav id="nav" role="navigation">
         <div class="menu-container">
             <ul class="menu">
-                <li class="menu-item"><a href="/index{% if static %}.html{% endif %}">主页</a></li>
+                <li class="menu-item"><a href="/">主页</a></li>
                 {% for item in menu_list %}
                 {% if "absolute" in item %}
                 {% set url = item.absolute %}
                 {% else %}
                 {% set url = "/"+item.name %}
                 {% endif %}
-                <li class="menu-item"><a href="{{url}}{% if static %}.html{% endif %}">{{ item.title }}</a>
+                <li class="menu-item"><a href="{{url}}">{{ item.title }}</a>
                 </li>
                 {% endfor %}
-                <li class="menu-item"><a href="/rss{% if static %}.xml{% endif %}">订阅</a></li>
+                <li class="menu-item"><a href="/rss">订阅</a></li>
             </ul>
         </div>
     </nav>
