@@ -33,11 +33,11 @@
 
             <div id="page_nav">
                 {% if now_page !=1 %}
-                <a class="prev page-numbers" href="/index/{{ now_page - 1 }}">上一页</a>
+                <a class="prev page-numbers" href="/index/{{ now_page - 1 }}">{{i18n|get_i18n_value("prev")}}</a>
                 {% endif %}
-                <span class="page-numbers current">第 {{ now_page }} 页 ⁄ 共 {{ page_row }} 页</span>
+                <span class="page-numbers current">{{i18n|get_i18n_value("page_num_head")}} {{ now_page }} {{i18n|get_i18n_value("page_num_intermediate")}} {{ page_row }} {{i18n|get_i18n_value("page_num_foot")}}</span>
                 {% if now_page != page_row and page_row != 1 %}
-                <a class="next page-numbers" href="/index/{{ now_page + 1 }}">下一页</a>
+                <a class="next page-numbers" href="/index/{{ now_page + 1 }}">{{i18n|get_i18n_value("next")}}</a>
                 {% endif %}
             </div>
 

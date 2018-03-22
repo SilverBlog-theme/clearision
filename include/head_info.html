@@ -13,7 +13,7 @@
     <nav id="nav" role="navigation">
         <div class="menu-container">
             <ul class="menu">
-                <li class="menu-item"><a href="/">主页</a></li>
+                <li class="menu-item"><a href="/">{{i18n|get_i18n_value("index")}}</a></li>
                 {% for item in menu_list %}
                 {% if "absolute" in item %}
                 {% set url = item.absolute %}
@@ -23,7 +23,7 @@
                 <li class="menu-item"><a href="{{url}}">{{ item.title }}</a>
                 </li>
                 {% endfor %}
-                <li class="menu-item"><a href="/rss">订阅</a></li>
+                <li class="menu-item"><a href="/rss">{{i18n|get_i18n_value("feed")}}</a></li>
             </ul>
         </div>
     </nav>
