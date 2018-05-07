@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -o errexit
 templates_name="clearision"
 if [ $(basename `pwd`) != "templates" ];then
     echo "[Error] Please do this in the templates directory!"
