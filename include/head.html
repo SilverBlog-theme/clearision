@@ -1,11 +1,14 @@
 <head>
     <meta charset="utf-8"/>
-    {% if page_info.title=="index" %}
-    {% set title=system_config.Project_Name %}
-    {% else %}
-    {% set title=page_info.title %}
-    {% endif %}
+    {%- if page_info.title=="index" -%}
+        {%- set title=system_config.Project_Name -%}
+        {% set description=system_config.Project_Description %}
+    {%- else -%}
+        {%- set title=page_info.title -%}
+        {%- set description=page_info.excerpt -%}
+    {%- endif -%}
     <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
     <link rel="stylesheet" href="/static/{{ system_config.Theme }}/style.css">
     {% if template_config.Cover_Image != "" %}
     <link rel="stylesheet" href="/static/{{ system_config.Theme }}/style.opacity.css">
