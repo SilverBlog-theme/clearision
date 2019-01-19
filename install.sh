@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 set -o errexit
 templates_name="clearision"
 if [ $(basename `pwd`) != "templates" ];then
