@@ -13,5 +13,6 @@ ln -sv ../${templates_name}/static ./static/${templates_name}
 fi
 cd ${templates_name}
 if [ -f "config.example.json" ]; then
-    cp config.example.json config.json
+    cp ${templates_name}/config.example.json ${templates_name}/config.json
 fi
+
