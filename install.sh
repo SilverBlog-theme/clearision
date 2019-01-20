@@ -6,12 +6,17 @@ if [ $(basename `pwd`) != "templates" ];then
     exit
 fi
 if [ ! -d ${templates_name} ]; then
+    echo "Cloning ${templates_name}..."
     git clone https://github.com/SilverBlogTheme/${templates_name}.git
 fi
+
 if [ ! -L ./static/${templates_name} ]; then
-ln -sv ../${templates_name}/static ./static/${templates_name}
+    echo "Create static file soft link..."
+    ln -sv $(pwd)/${templates_name}/static ./static/${templates_name}
 fi
+
 if [ -f "config.example.json" ]; then
-    cp ${templates_name}/config.example.json ${templates_name}/config.json
+    echo "Create a configuration file..."
+    cp ./${templates_name}/config.example.json ./${templates_name}/config.json
 fi
 
