@@ -11,7 +11,6 @@ fi
 if [ ! -L ./static/${templates_name} ]; then
 ln -sv ../${templates_name}/static ./static/${templates_name}
 fi
-cd ${templates_name}
 if [ -f "config.example.json" ]; then
     cp ${templates_name}/config.example.json ${templates_name}/config.json
 fi
