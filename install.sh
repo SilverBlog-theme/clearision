@@ -15,8 +15,9 @@ if [ ! -L ./static/${templates_name} ]; then
     ln -sv $(pwd)/${templates_name}/static ./static/${templates_name}
 fi
 
-if [ -f "config.example.json" ]; then
+if [ -f "${templates_name}/config.example.json" ]; then
     echo "Create a configuration file..."
-    cp ./${templates_name}/config.example.json ./${templates_name}/config.json
+    cp ${templates_name}/config.example.json ${templates_name}/config.json
 fi
+
 
