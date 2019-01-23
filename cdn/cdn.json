@@ -1,0 +1,8 @@
+{
+  "style.css": "/static/clearision/style.css",
+  "style.opacity.css": "/static/clearision/style.opacity.css",
+  "github.css": "https://cdn.jsdelivr.net/npm/highlight.js@9.13.1/styles/github.css",
+  "bplayer.min.js":"https://cdn.jsdelivr.net/npm/bplayer@1.0.7/dist/bplayer.min.js",
+  "bp_init.js": "https://cdn.jsdelivr.net/npm/bplayer@1.0.7/dist/bp_init.js",
+  "highlight.min.js": "https://cdn.jsdelivr.net/npm/highlight.js@9.13.1/lib/highlight.min.js"
+}

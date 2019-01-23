@@ -1,0 +1,30 @@
+{
+  "name": "clearision",
+  "description": "A brilliant HTML5 blog theme to some different blog platform.",
+  "author": "qwe7002 <qwe7002@hotmail.com>",
+  "bug": "https://github.com/silverblog-theme/clearision/issues",
+  "license": "MIT",
+  "homepage": "https://github.com/silverblog-theme/clearision",
+  "download": [
+    {
+      "url": "https://cdn.jsdelivr.net/npm/highlight.js@9.13.1/styles/github.css",
+      "path": "highlight.js",
+      "filename": "github.css"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/highlight.js@9.13.1/lib/highlight.min.js",
+      "path": "highlight.js",
+      "filename": "highlight.min.js"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bplayer@1.0.7/dist/bplayer.min.js",
+      "path": "bplayer",
+      "filename": "bplayer.min.js"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bplayer@1.0.7/dist/bp_init.js",
+      "path": "bplayer",
+      "filename": "bp_init.js"
+    }
+  ]
+}

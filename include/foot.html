@@ -2,9 +2,10 @@
     Powered by <a href="http://dimpurr.com"  target="_blank" title="Dimpurr Cheny">Dimpurr</a>'s
     <a href="http://blog.dimpurr.com/clearision"  target="_blank" title="Clearision">Clearision</a> & <a
         href="http://github.com/SilverBlogTeam/SilverBlog" target="_blank">SilverBlog</a><br/>
-    <script src="https://cdn.silverblog.org/bplayer/bplayer.min.js"></script>
-    <script src="https://cdn.silverblog.org/bplayer/bp_init.js"></script>
-    <script src="https://cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+    {% include "include/footer.html" ignore missing %}
+    <script src="{{static_file['bplayer.min.js']}}"></script>
+    <script src="{{static_file['bp_init.js']}}"></script>
+    <script src="{{static_file['highlight.min.js']}}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     {% include "include/foot.html" ignore missing %}
 </footer>
